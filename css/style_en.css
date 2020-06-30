@@ -1,0 +1,656 @@
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+
+.custom-container {
+  width: 92%;
+  margin: 0 auto;
+  padding: 0; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.panel {
+  padding-top: 110px; }
+
+.btn-travel {
+  background-color: #E42119;
+  color: #fff;
+  padding: 10px 16px; }
+  .btn-travel:hover {
+    color: #fff; }
+
+.navbar.scrolling-navbar.top-nav-collapse {
+  background-color: black; }
+
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 12px 16px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-height: 80px;
+  transition: background-color .1s; }
+  .custom-navbar.full-black {
+    background-color: black !important; }
+  .custom-navbar .navbar-brand {
+    padding: 5px 0;
+    margin-left: 0;
+    margin-right: 16px; }
+  .custom-navbar .navbar-collapse .navbar-nav {
+    margin-right: auto;
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 40px; }
+    .custom-navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+      padding: 8px;
+      font-size: 16px; }
+      .custom-navbar .navbar-collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+        background-color: rgba(0, 0, 0, 0.3) !important; }
+  .custom-navbar .navbar-collapse .contact-icons .icon-container {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: white; }
+    .custom-navbar .navbar-collapse .contact-icons .icon-container span {
+      font-size: 16px; }
+
+.cover {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .cover .cover-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .cover .cover-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .cover .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .cover .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+    .cover .text .title {
+      font-size: 38px;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    .cover .text .smaller {
+      font-size: 20px; }
+
+.intro .row {
+  margin-bottom: 30px; }
+  .intro .row .intro-image {
+    height: 500px;
+    overflow: hidden;
+    padding: 0 !important; }
+    .intro .row .intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .intro .row .intro-text {
+    background-color: rgba(116, 115, 115, 0.2);
+    position: relative; }
+    .intro .row .intro-text .text-container {
+      width: 60%;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%); }
+      .intro .row .intro-text .text-container .title {
+        padding-top: 30px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold; }
+      .intro .row .intro-text .text-container .body {
+        font-size: 16px;
+        text-align: justify; }
+
+.features {
+  background-color: rgba(116, 115, 115, 0.2);
+  margin-bottom: 50px;
+  padding-top: 50px; }
+  .features .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative; }
+    .features .title:before {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% - 300px);
+      top: 18px; }
+    .features .title:after {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% + 100px);
+      top: 18px; }
+  .features .feature {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .features .feature .icon-container {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      display: inline-block; }
+      .features .feature .icon-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .features .feature .f-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .features .feature .f-description {
+      font-size: 14px; }
+
+.offers {
+  margin-bottom: 50px; }
+  .offers .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative; }
+    .offers .title:before {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% - 290px);
+      top: 18px; }
+    .offers .title:after {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% + 90px);
+      top: 18px; }
+  .offers .offer-container {
+    padding: 0 8px;
+    margin-bottom: 30px; }
+    .offers .offer-container .offer {
+      width: 100%; }
+      .offers .offer-container .offer .image-container {
+        width: 100%;
+        height: 410px;
+        overflow: hidden; }
+        .offers .offer-container .offer .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .offers .offer-container .offer .offer-links {
+        width: 100%; }
+        .offers .offer-container .offer .offer-links.color-1 {
+          background-color: #ba1a1d; }
+          .offers .offer-container .offer .offer-links.color-1 .offer-link:before {
+            background-color: #9b1313; }
+        .offers .offer-container .offer .offer-links.color-2 {
+          background-color: #0ba8e0; }
+          .offers .offer-container .offer .offer-links.color-2 .offer-link:before {
+            background-color: #0b93c8; }
+        .offers .offer-container .offer .offer-links.color-3 {
+          background-color: #263374; }
+          .offers .offer-container .offer .offer-links.color-3 .offer-link:before {
+            background-color: #3f4fc0; }
+        .offers .offer-container .offer .offer-links .offer-link {
+          padding: 20px;
+          display: block;
+          width: 100%;
+          position: relative;
+          z-index: 500; }
+          .offers .offer-container .offer .offer-links .offer-link:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            z-index: 10;
+            transition: all .3s; }
+          .offers .offer-container .offer .offer-links .offer-link:hover:before {
+            width: 100%; }
+          .offers .offer-container .offer .offer-links .offer-link.offer-link-1 {
+            border-bottom: 2px solid #ffffff; }
+          .offers .offer-container .offer .offer-links .offer-link .column {
+            text-align: center;
+            width: 49%;
+            z-index: 900; }
+            .offers .offer-container .offer .offer-links .offer-link .column .offer-title {
+              font-size: 16px;
+              font-weight: 400;
+              color: #fff;
+              margin-bottom: 10px;
+              z-index: 1000;
+              width: 110%;
+              max-height: 48px;
+              overflow: hidden; }
+            .offers .offer-container .offer .offer-links .offer-link .column .price {
+              color: #fff;
+              font-size: 14px;
+              margin-bottom: 10px;
+              z-index: 1000; }
+            .offers .offer-container .offer .offer-links .offer-link .column .stars {
+              font-size: 12px;
+              color: #fff;
+              z-index: 1000; }
+            .offers .offer-container .offer .offer-links .offer-link .column .city {
+              font-size: 18px;
+              color: #fff;
+              font-weight: bold;
+              margin-bottom: 10px;
+              z-index: 1000; }
+            .offers .offer-container .offer .offer-links .offer-link .column .country {
+              color: #fff;
+              font-size: 14px;
+              margin-bottom: 13px;
+              z-index: 1000; }
+            .offers .offer-container .offer .offer-links .offer-link .column .logos {
+              color: #fff;
+              font-size: 16px;
+              z-index: 1000; }
+
+.contact-us {
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .contact-us .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative; }
+    .contact-us .title:before {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% - 290px);
+      top: 16px; }
+    .contact-us .title:after {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% + 90px);
+      top: 16px; }
+  .contact-us .cat {
+    padding: 0;
+    margin-bottom: 30px; }
+    .contact-us .cat .logo-container {
+      font-size: 26px;
+      color: #E42119;
+      text-align: right;
+      padding-right: 10px; }
+    .contact-us .cat .cat-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .contact-us .cat .info {
+      color: #E42119;
+      display: block;
+      padding-right: 10px; }
+    .contact-us .cat .logo {
+      text-align: center;
+      font-size: 50px; }
+    .contact-us .cat .text {
+      text-align: center;
+      font-size: 14px; }
+      .contact-us .cat .text .email-address {
+        direction: ltr;
+        font-size: 20px; }
+      .contact-us .cat .text .address {
+        margin-bottom: 10px; }
+      .contact-us .cat .text .s-media a {
+        direction: ltr;
+        text-decoration: none; }
+
+.post {
+  height: 520px; }
+  .post .image-container {
+    width: 100%;
+    height: 100%; }
+    .post .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .post .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  .post .body {
+    font-size: 14px;
+    margin-bottom: 30px; }
+
+.blogs {
+  margin-bottom: 50px; }
+  .blogs .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+    text-align: center; }
+    .blogs .title:before {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% - 290px);
+      top: 16px; }
+    .blogs .title:after {
+      content: "";
+      width: 200px;
+      height: 2px;
+      background: white;
+      background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #212529 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#212529",GradientType=1);
+      position: absolute;
+      left: calc(50% + 90px);
+      top: 16px; }
+  .blogs .tour {
+    padding: 0 8px;
+    margin-bottom: 16px; }
+    .blogs .tour.col-lg-4 .tile {
+      height: 232px; }
+    .blogs .tour.col-lg-6 .tile {
+      height: 352px; }
+    .blogs .tour .tile {
+      display: block;
+      position: relative; }
+      .blogs .tour .tile .image-container {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .blogs .tour .tile .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .blogs .tour .tile .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.1); }
+      .blogs .tour .tile span {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 24px; }
+
+.bp-tours .title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: bold; }
+.bp-tours .offer-container {
+  padding: 0 8px;
+  margin-bottom: 30px; }
+  .bp-tours .offer-container .offer {
+    width: 100%;
+    border: 1px solid #ececec; }
+    .bp-tours .offer-container .offer .image-container {
+      width: 100%;
+      height: 410px;
+      overflow: hidden; }
+      .bp-tours .offer-container .offer .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .bp-tours .offer-container .offer .offer-links {
+      width: 100%;
+      background-color: #fff; }
+      .bp-tours .offer-container .offer .offer-links .offer-link {
+        padding: 20px;
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 500; }
+        .bp-tours .offer-container .offer .offer-links .offer-link:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 0;
+          height: 100%;
+          z-index: 10;
+          transition: all .3s;
+          background-color: #ececec; }
+        .bp-tours .offer-container .offer .offer-links .offer-link:hover:before {
+          width: 100%; }
+        .bp-tours .offer-container .offer .offer-links .offer-link.offer-link-1 {
+          border-bottom: 2px solid #0d0d0d; }
+        .bp-tours .offer-container .offer .offer-links .offer-link .column {
+          text-align: center;
+          width: 49%;
+          z-index: 900; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .offer-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: #0d0d0d;
+            margin-bottom: 10px;
+            z-index: 1000;
+            width: 110%;
+            max-height: 48px;
+            overflow: hidden; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .price {
+            color: #0d0d0d;
+            font-size: 14px;
+            margin-bottom: 10px;
+            z-index: 1000; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .stars {
+            font-size: 12px;
+            color: #0d0d0d;
+            z-index: 1000; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .city {
+            font-size: 18px;
+            color: #0d0d0d;
+            font-weight: bold;
+            margin-bottom: 10px;
+            z-index: 1000; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .country {
+            color: #0d0d0d;
+            font-size: 14px;
+            margin-bottom: 13px;
+            z-index: 1000; }
+          .bp-tours .offer-container .offer .offer-links .offer-link .column .logos {
+            color: #0d0d0d;
+            font-size: 16px;
+            z-index: 1000; }
+
+.tour-specs {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 40px 20px;
+  text-align: center;
+  position: fixed;
+  top: 110px;
+  width: 29%;
+  display: inline-block; }
+  .tour-specs.relative {
+    position: relative;
+    width: 100%;
+    top: 833px; }
+  .tour-specs .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #45484a; }
+  .tour-specs .destination, .tour-specs .price {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .tour-specs .date {
+    color: #747373;
+    font-size: 16px;
+    margin-bottom: 40px; }
+  .tour-specs .stars {
+    margin-bottom: 40px;
+    color: #E8A63A; }
+  .tour-specs .tour-text {
+    color: #747373;
+    font-size: 16px;
+    margin-bottom: 10px; }
+
+.big-image-container {
+  height: 480px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  margin-bottom: 25px; }
+  .big-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.highlights {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  margin-bottom: 25px; }
+  .highlights .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .highlights .highlight {
+    margin-bottom: 10px; }
+    .highlights .highlight .logo-container {
+      display: inline-block;
+      font-size: 24px;
+      margin-left: 10px; }
+    .highlights .highlight .text {
+      display: inline-block;
+      font-size: 18px;
+      margin-bottom: 10px;
+      transform: translateY(-5px); }
+
+.mobile-tour-specs {
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  margin-bottom: 25px;
+  display: none;
+  text-align: center; }
+  .mobile-tour-specs .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #45484a; }
+  .mobile-tour-specs .destination, .mobile-tour-specs .price {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .mobile-tour-specs .date {
+    color: #747373;
+    font-size: 16px;
+    margin-bottom: 40px; }
+  .mobile-tour-specs .stars {
+    margin-bottom: 40px;
+    color: #E8A63A; }
+  .mobile-tour-specs .tour-text {
+    color: #747373;
+    font-size: 16px;
+    margin-bottom: 10px; }
+
+.special-note, .more-details {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  margin-bottom: 25px; }
+  .special-note .title, .more-details .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .special-note .text, .more-details .text {
+    font-size: 16px;
+    margin-bottom: 10px; }
+
+@media (max-width: 992px) {
+  .custom-container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .custom-navbar {
+    min-height: 60px; }
+
+  .panel {
+    padding-top: 90px; }
+
+  .intro .row .intro-text {
+    height: 400px; }
+
+  .cover .text {
+    width: 90%; }
+    .cover .text .title {
+      font-size: 30px; }
+    .cover .text .smaller {
+      font-size: 18px; }
+
+  .tour-specs {
+    display: none; }
+
+  .mobile-tour-specs {
+    display: block; }
+
+  .big-image-container {
+    height: 240px; } }
+
+/*# sourceMappingURL=style_en.css.map */

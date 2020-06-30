@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>تاریخچه پرداخت ها</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/DatePicker.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style_fa.css">
+</head>
+<body>
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar custom-navbar full-black user-navbar">
+        <div class="sideNav-trigger">
+            <i class="fal fa-bars"></i>
+        </div>
+        <a class="navbar-brand" href="#">سایت تراول</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">صفحه اصلی</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        مشاهده تور ها
+                    </a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">تور ایتالیا</a>
+                        <a class="dropdown-item" href="#">تور ایران</a>
+                        <a class="dropdown-item" href="#">تور فرانسه</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        درباره ما
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-icons d-flex justify-content-center">
+            <a href="#" class="icon-container"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-container"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon-container"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" class="icon-container" id="phone">
+                <span>013-33322744</span>
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="sideNav">
+        <div class="profile">
+            <div class="image-container">
+                <img src="images/user-circle.svg" alt="">
+            </div>
+            <div class="name">همایون صالح کیا</div>
+            <div class="phone">09373349978</div>
+        </div>
+        <ul class="sideNav-list">
+            <li class="sideNav-item">
+                <a href="dashboard.html" class="sideNav-link">داشبورد</a>
+            </li>
+            <li class="sideNav-item active">
+                <a href="payment-history.html" class="sideNav-link">تاریخچه پرداخت ها</a>
+            </li>
+            <li class="sideNav-item">
+                <a href="#">ویرایش پروفایل</a>
+            </li>
+            <li class="sideNav-item">
+                <a href="#">خروج از پروفایل</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<main class="user-panel">
+    <div class="custom-container">
+        <section class="panel-section payment-history">
+            <div class="title">تاریخچه پرداخت ها</div>
+            <table class="table table-striped">
+                <thead class="custom-thead">
+                    <tr>
+                        <th scope="col">ردیف</th>
+                        <th scope="col">مبلغ تراکنش (تومان)</th>
+                        <th scope="col">توضیحات ویزا</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>2,000,000 تومان</td>
+                        <td>توضیحات مختصری درباره ویزای خریداری شده</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>1,400,000 تومان</td>
+                        <td>توضیحات مختصری درباره ویزای خریداری شده</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="cover off"></div>
+</main>
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/DatePicker.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".sideNav-trigger").click(function () {
+            $(".sideNav").css("right", "0");
+            $(".cover").removeClass("off");
+            $(".cover").addClass("on");
+        });
+        $(".cover").click(function () {
+            $(".sideNav").css("right", "-240px");
+            $(".cover").removeClass("on");
+            $(".cover").addClass("off");
+        });
+    });
+</script>
+</body>
+</html>
